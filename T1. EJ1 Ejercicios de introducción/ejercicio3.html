@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 3</title>
+</head>
+<body>
+  <h1>Test de fútbol</h1>
+
+  <p id="p1">1. Un partido de fútbol dura 90 minutos (sin contar la prórroga).</p>
+  <button onclick="acierto('p1')">Verdadero</button>
+  <button onclick="error('p1')">Falso</button>
+
+  <p id="p2">2. Cada equipo juega con 11 jugadores en el campo.</p>
+  <button onclick="acierto('p2')">Verdadero</button>
+  <button onclick="error('p2')">Falso</button>
+
+  <p id="p3">3. El Mundial de fútbol se celebra cada dos años.</p>
+  <button onclick="error('p3')">Verdadero</button>
+  <button onclick="acierto('p3')">Falso</button>
+
+  <p id="p4">4. El Real Madrid es el equipo con más Champions League.</p>
+  <button onclick="acierto('p4')">Verdadero</button>
+  <button onclick="error('p4')">Falso</button>
+
+  <p id="p5">5. Los delanteros pueden tocar el balón con la mano.</p>
+  <button onclick="error('p5')">Verdadero</button>
+  <button onclick="acierto('p5')">Falso</button>
+
+  <p id="p6">6. Argentina ganó el Mundial de 2022.</p>
+  <button onclick="acierto('p6')">Verdadero</button>
+  <button onclick="error('p6')">Falso</button>
+
+  <p id="p7">7. El FC Barcelona juega en el estadio Santiago Bernabéu.</p>
+  <button onclick="error('p7')">Verdadero</button>
+  <button onclick="acierto('p7')">Falso</button>
+
+  <script>
+    function acierto(id) {
+      document.getElementById(id).style.color = "green";
+    }
+
+    function error(id) {
+      document.getElementById(id).style.color = "red";
+    }
+  </script>
+</body>
+</html>

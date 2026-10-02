@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 2</title>
+</head>
+<body>
+  <h1>Secuencia de imágenes</h1>
+  <p>Haz clic sobre la imagen para ver la siguiente.</p>
+  <img id="imagen" src="foto1.jpg" onclick="siguiente()">
+  <script>
+    var n = 1;
+
+    function siguiente() {
+      n = n + 1;
+      if (n > 4) {
+        n = 1;
+      }
+      document.getElementById("imagen").src = "foto" + n + ".png";
+    }
+  </script>
+</body>
+</html>
