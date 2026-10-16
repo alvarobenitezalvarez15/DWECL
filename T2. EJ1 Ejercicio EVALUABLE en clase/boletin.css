@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: black;
+  font-weight: bold;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.caja h2 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid rgb(94, 94, 94);
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(194, 194, 194) ;
+}
+
+.aprobado {
+  background-color: rgb(120, 255, 120);
+}
+
+.suspenso {
+  background-color: rgb(255, 145, 145);
+}
+
+.media {
+  font-weight: bold;
+}
+
+.formulario {
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"] {
+  width: 200px;
+}
+
+.formulario input[type="number"] {
+  width: 70px;
+}
+
+input, select {
+  padding: 6px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #4589ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4589ff;
+}
+
+button.secundario {
+  background-color: #4589ff;
+}
+
+.oculto {
+  display: none;
+}
+
+.error {
+  color: red;
+}
