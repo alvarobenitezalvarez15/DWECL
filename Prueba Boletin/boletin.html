@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boletin.css">
+</head>
+<body>
+    <h1>Boletín de notas de la clase</h1>
+    <nav>
+        <a>Notas</a> | <a>Consultas</a>
+    </nav>
+
+  <div id="seccionNotas">
+    <section class="caja">
+      <h2>Notas por trimestre</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Alumno</th><th>1T</th><th>2T</th><th>3T</th><th>Media</th><th>Calificación</th>
+          </tr>
+        </thead>
+        <tbody id="tablaNotas"></tbody>
+      </table>
+    </section>
+
+    <section class="caja">
+      <h2>Añadir alumno</h2>
+      <div class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="nombre">
+        <label for="t1">1T:</label>
+        <input type="number">
+        <label for="t2">2T:</label>
+        <input type="number">
+        <label for="t3">3T:</label>
+        <input type="number">
+        <button id="btnAnadir">Añadir</button>
+      </div>
+      <button id="btnReset" class="secundario">Volver a los datos iniciales</button>
+      <p id="mensaje"></p>
+    </section>
+  </div>
+  <script src="boletin.js"></script>
+</body>
+</html>

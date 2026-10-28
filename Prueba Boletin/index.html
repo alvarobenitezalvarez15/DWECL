@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boletín de notas de la clase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Boletín de notas de la clase</h1>
+
+  <nav>
+    <a href="#" id="linkNotas">Notas</a> | <a href="#" id="linkConsultas">Consultas</a>
+  </nav>
+
+  <!-- Sección NOTAS -->
+  <div id="seccionNotas">
+    <section class="caja">
+      <h2>Notas por trimestre</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Alumno</th><th>1T</th><th>2T</th><th>3T</th><th>Media</th><th>Calificación</th>
+          </tr>
+        </thead>
+        <tbody id="tablaNotas"></tbody>
+      </table>
+    </section>
+
+    <section class="caja">
+      <h2>Añadir alumno</h2>
+      <div class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="nombre">
+        <label for="t1">1T:</label>
+        <input type="number" id="t1" min="0" max="10" step="0.1">
+        <label for="t2">2T:</label>
+        <input type="number" id="t2" min="0" max="10" step="0.1">
+        <label for="t3">3T:</label>
+        <input type="number" id="t3" min="0" max="10" step="0.1">
+        <button id="btnAnadir">Añadir</button>
+      </div>
+      <button id="btnReset" class="secundario">Volver a los datos iniciales</button>
+      <p id="mensaje"></p>
+    </section>
+  </div>
+
+  <!-- Sección CONSULTAS -->
+  <div id="seccionConsultas" class="oculto">
+    <section class="caja">
+      <h2>Consultas</h2>
+      <ul id="listaConsultas"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="reloj"></h1>
+  <button onclick="parar()">Parar</button>
+  <button onclick="reanudar()">Reanudar</button>
+
+  <script>
+    let intervalo;
+
+    function mostrarHora() {
+      const ahora = new Date();
+      document.getElementById("reloj").textContent = ahora.toLocaleTimeString("es-ES");
+    }
+
+    function reanudar() {
+      clearInterval(intervalo);            // evita crear varios intervalos a la vez
+      mostrarHora();
+      intervalo = setInterval(mostrarHora, 1000);
+    }
+
+    function parar() {
+      clearInterval(intervalo);
+    }
+
+    reanudar(); // arranca al cargar la página
+  </script>
+</body>
+</html>
