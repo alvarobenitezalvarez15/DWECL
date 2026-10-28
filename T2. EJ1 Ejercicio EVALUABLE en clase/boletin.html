@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boletín de notas de la clase</title>
+  <link rel="stylesheet" href="boletin.css">
+</head>
+<body>
+  <h1>Boletín de notas de la clase</h1>
+
+  <nav>
+    <a href="#" id="enlaceNotas">Notas</a>
+    <span>|</span>
+    <a href="#" id="enlaceConsultas">Consultas</a>
+  </nav>
+
+  <section id="seccionNotas">
+    <div class="caja">
+      <h2>Notas por trimestre</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Alumno</th>
+            <th>1T</th>
+            <th>2T</th>
+            <th>3T</th>
+            <th>Media</th>
+            <th>Calificación</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+      </table>
+    </div>
+
+    <div class="caja">
+      <h2>Añadir alumno</h2>
+      <div class="formulario">
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+        <label>1T:</label>
+        <input type="number" id="nota1" min="0" max="10">
+        <label>2T:</label>
+        <input type="number" id="nota2" min="0" max="10">
+        <label>3T:</label>
+        <input type="number" id="nota3" min="0" max="10">
+        <button id="botonAnadir">Añadir</button>
+      </div>
+      <button id="botonReset" class="secundario">Volver a los datos iniciales</button>
+      <p id="mensaje"></p>
+    </div>
+  </section>
+
+  <section id="seccionConsultas" class="oculto">
+    <div class="caja">
+      <h2>1. Contar aprobados</h2>
+      <button id="botonAprobados">Contar aprobados</button>
+      <p id="resAprobados"></p>
+    </div>
+
+    <div class="caja">
+      <h2>2. Mejor nota de la clase</h2>
+      <button id="botonMejor">Mostrar mejor nota</button>
+      <p id="resMejor"></p>
+    </div>
+
+    <div class="caja">
+      <h2>3. Media de un trimestre</h2>
+      <select id="trimestre">
+        <option value="0">1T</option>
+        <option value="1">2T</option>
+        <option value="2">3T</option>
+      </select>
+      <button id="botonMediaTrimestre">Calcular media</button>
+      <p id="resMediaTrimestre"></p>
+    </div>
+
+    <div class="caja">
+      <h2>4. Buscar un alumno</h2>
+      <input type="text" id="buscar" placeholder="Nombre del alumno">
+      <button id="botonBuscar">Buscar</button>
+      <p id="resBuscar"></p>
+    </div>
+  </section>
+
+  <script src="boletin.js"></script>
+</body>
+</html>
