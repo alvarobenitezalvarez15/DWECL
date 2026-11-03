@@ -9,6 +9,11 @@ const libro = {
 
 console.log(libro.resumen());
 
+
 for (const clave in libro) {
-  console.log(clave + ": " + libro[clave]);
+  if (typeof libro[clave] === "function") {
+    console.log(clave + ": " + libro[clave]());
+  } else {
+    console.log(clave + ": " + libro[clave]);
+  }
 }
